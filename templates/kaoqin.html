@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <html>
+    <head>
+        <meta charset="UTF-8">
+
+
+    </head>
+    <body>
+
+
+    <ul>
+        {% for kaoqin in kaoqinList %}
+            <li><a target="_blank"
+            >{{ kaoqin.showRecordDate }}    {{ kaoqin.showBeginTime }}    {{ kaoqin.showEndTime }}    {{ kaoqin.lastName }}</a></li>
+        {% endfor %}
+    </ul>
+
+    </body>
+    </html>
+
+{% endblock %}
